@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "serverless-nodejs-fileuploader.js",
         "cursor": {
-          "lineNumber": 20,
-          "column": 7
+          "lineNumber": 29,
+          "column": 51
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,10 +24,10 @@
         },
         "triggers": [
           {
-            "resourceName": "httpApiguploadFileAPI",
+            "resourceName": "httpApigfileUploaderAPI",
             "config": {
               "defaultRoute": false,
-              "method": "PUT",
+              "method": "POST",
               "route": "/upload"
             }
           }
@@ -72,6 +72,32 @@
           "mode": 0,
           "bucket": {
             "name": "file-upload-s3bucket-scgcpo"
+          }
+        }
+      },
+      "httpApigfileUploaderAPI": {
+        "name": "httpApigfileUploaderAPI",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "fileUploaderAPI",
+          "stageName": "production",
+          "corsConfig": {
+            "allowedHeaders": [
+              "*"
+            ],
+            "allowedMethods": [
+              "*"
+            ],
+            "allowedOrigins": [
+              "*"
+            ],
+            "exposedHeaders": [
+              "*"
+            ],
+            "maxAge": 0,
+            "allowCredentials": false
           }
         }
       }
@@ -119,7 +145,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1613373679636
+    "lastSave": 1613375095759
   },
   "VCS_STATE": {
     "provider": "GitHub",
