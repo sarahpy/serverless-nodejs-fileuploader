@@ -5,7 +5,7 @@ const s3 = new AWS.S3();
 let mime = require('mime-types')
 
 exports.handler = async (event) => {
-    debugger;
+    //debugger;
     console.log("serverless nodejs fileuploader received");
 
     //extract file content eg.file upload in body, text (csv) in body, binary (img) in Base64 encoded
@@ -17,7 +17,7 @@ exports.handler = async (event) => {
     //file extension : need to include in HTTP Header to determine file extension contenttype
     let contentType = event.headers['content-type'] || event.headers['Content-Type'];
     let extension = contentType ? mime.extension(contentType) : '';
-    console.log(event);
+    //console.log(event);
     //full filename
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
     let s3bucket = "file-upload-s3bucket-scgcpo";
