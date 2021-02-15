@@ -32,7 +32,7 @@
             }
           }
         ],
-        "lastUpdated": 1613358162505,
+        "lastUpdated": 1613361840169,
         "testCases": {
           "fa4fbb5f-9ce6-4f14-b93e-3271df80fb86": {
             "id": "fa4fbb5f-9ce6-4f14-b93e-3271df80fb86",
@@ -65,7 +65,7 @@
           "apiType": 2,
           "mode": 0,
           "apiName": "uploadFileAPI",
-          "stageName": "test",
+          "stageName": "production",
           "corsConfig": {
             "maxAge": 0,
             "allowCredentials": false
@@ -86,7 +86,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -126,7 +126,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1613361025179
+    "lastSave": 1613363095460
   },
   "VCS_STATE": {
     "provider": "GitHub",
