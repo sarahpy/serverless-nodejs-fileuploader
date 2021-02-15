@@ -22,7 +22,7 @@ exports.handler = async (event) => {
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
     let s3bucket = "file-upload-s3bucket-scgcpo";
     let s3region = "ap-southeast-1";
-    let s3bucketurl = `https://.${s3bucket}.s3-.${s3region}.amazonaws.com`;
+    let s3bucketurl = `https://${s3bucket}.s3-${s3region}.amazonaws.com`;
     //upload file to s3 bucket
     try {
         let data = await s3.putObject({
@@ -33,7 +33,7 @@ exports.handler = async (event) => {
         }).promise();
 
         console.log("Successfully uploaded file", fullFileName);
-        let fullurl = `${s3bucketurl}./.${fullFileName}`;
+        let fullurl = `${s3bucketurl}/${fullFileName}`;
         //return "Successfully uploaded ";
         return { 
             "message": "Successfully uploaded",

@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "serverless-nodejs-fileuploader.js",
         "cursor": {
-          "lineNumber": 41,
-          "column": 11
+          "lineNumber": 36,
+          "column": 39
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -38,7 +38,8 @@
             "id": "fa4fbb5f-9ce6-4f14-b93e-3271df80fb86",
             "functionId": "96936e79-4619-41a1-b058-f308f6d95c31",
             "name": "My First Test Case",
-            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+            "event": "{\n    \"Records\": [\n        {\n            \"eventVersion\": \"2.0\",\n            \"eventSource\": \"aws:s3\",\n            \"awsRegion\": \"us-east-1\",\n            \"eventTime\": \"1970-01-01T00:00:00.000Z\",\n            \"eventName\": \"ObjectCreated:Put\",\n            \"userIdentity\": {\n                \"principalId\": \"EXAMPLE\"\n            },\n            \"requestParameters\": {\n                \"sourceIPAddress\": \"127.0.0.1\"\n            },\n            \"responseElements\": {\n                \"x-amz-request-id\": \"EXAMPLE123456789\",\n                \"x-amz-id-2\": \"EXAMPLE123/5678abcdefghijklambdaisawesome/mnopqrstuvwxyzABCDEFGH\"\n            },\n            \"s3\": {\n                \"s3SchemaVersion\": \"1.0\",\n                \"configurationId\": \"testConfigRule\",\n                \"bucket\": {\n                    \"name\": \"example-bucket\",\n                    \"ownerIdentity\": {\n                        \"principalId\": \"EXAMPLE\"\n                    },\n                    \"arn\": \"arn:aws:s3:::example-bucket\"\n                },\n                \"object\": {\n                    \"key\": \"test/key\",\n                    \"size\": 1024,\n                    \"eTag\": \"0123456789abcdef0123456789abcdef\",\n                    \"sequencer\": \"0A1B2C3D4E5F678901\"\n                }\n            }\n        }\n    ]\n}",
+            "eventTemplate": "s3-put"
           }
         }
       },
@@ -126,7 +127,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1613363095460
+    "lastSave": 1613370799273
   },
   "VCS_STATE": {
     "provider": "GitHub",
