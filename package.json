@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "mime-types": "2.1.28"
+    },
+    "devDependencies": {
+        "aws-sdk": "2.817.0"
+    }
+}

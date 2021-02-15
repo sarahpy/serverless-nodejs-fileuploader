@@ -1,0 +1,138 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "96936e79-4619-41a1-b058-f308f6d95c31": {
+        "id": "96936e79-4619-41a1-b058-f308f6d95c31",
+        "parent": null,
+        "name": "serverless-nodejs-fileuploader.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "serverless-nodejs-fileuploader.js",
+        "cursor": {
+          "lineNumber": 24,
+          "column": 31
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "serverlessNodejsFileuploader"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApiguploadFileAPI",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/upload"
+            }
+          }
+        ],
+        "lastUpdated": 1613358162505,
+        "testCases": {
+          "fa4fbb5f-9ce6-4f14-b93e-3271df80fb86": {
+            "id": "fa4fbb5f-9ce6-4f14-b93e-3271df80fb86",
+            "functionId": "96936e79-4619-41a1-b058-f308f6d95c31",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "162375e9-e1ec-4359-a5e5-2d9c28a5a683": {
+        "id": "162375e9-e1ec-4359-a5e5-2d9c28a5a683",
+        "parent": null,
+        "name": "package.json",
+        "type": "JSON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "package.json"
+      }
+    },
+    "openFiles": [
+      "96936e79-4619-41a1-b058-f308f6d95c31"
+    ],
+    "currentFileId": "96936e79-4619-41a1-b058-f308f6d95c31",
+    "resources": {
+      "httpApiguploadFileAPI": {
+        "name": "httpApiguploadFileAPI",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "uploadFileAPI",
+          "stageName": "test",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      },
+      "s3fileUploadS3bucketScgcpo": {
+        "name": "s3fileUploadS3bucketScgcpo",
+        "type": "S3",
+        "config": {
+          "mode": 0,
+          "bucket": {
+            "name": "file-upload-s3bucket-scgcpo"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "mime-types": {
+          "name": "mime-types",
+          "version": "2.1.28",
+          "dev": false,
+          "language": "nodejs"
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.817.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.6.0",
+    "projectName": "serverless-nodejs-fileuploader",
+    "projectDescription": "file upload api using nodejs and serverless ",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1613361025179
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "serverless-nodejs-fileuploader",
+      "url": "https://github.com/sarahpy/serverless-nodejs-fileuploader"
+    }
+  }
+}
