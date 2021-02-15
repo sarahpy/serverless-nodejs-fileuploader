@@ -17,7 +17,7 @@ exports.handler = async (event) => {
     //file extension : need to include in HTTP Header to determine file extension contenttype
     let contentType = event.headers['content-type'] || event.headers['Content-Type'];
     let extension = contentType ? mime.extension(contentType) : '';
-
+    console.log(event);
     //full filename
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
     let s3bucket = "file-upload-s3bucket-scgcpo";
@@ -32,7 +32,7 @@ exports.handler = async (event) => {
             Metadata: {}
         }).promise();
 
-        console.log("Successfully uploaded file", fullFileName);
+        console.log("Successfully uploaded file: ", fullFileName);
         let fullurl = `${s3bucketurl}/${fullFileName}`;
         //return "Successfully uploaded ";
         return { 
