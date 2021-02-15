@@ -20,7 +20,7 @@ exports.handler = async (event) => {
     console.log(event);
     //full filename
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
-    let s3bucket = "file-upload-s3bucket-scgcpo";
+    let s3bucket = "file-upload-s3bucket-cpo";
     let s3region = "ap-southeast-1";
     let s3bucketurl = `https://${s3bucket}.s3-${s3region}.amazonaws.com`;
     //upload file to s3 bucket

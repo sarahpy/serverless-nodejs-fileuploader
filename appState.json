@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "serverless-nodejs-fileuploader.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 32
+          "lineNumber": 23,
+          "column": 42
         },
         "config": {
           "runtime": "nodejs10.x",
