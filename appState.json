@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "serverless-nodejs-fileuploader.js",
         "cursor": {
-          "lineNumber": 23,
-          "column": 42
+          "lineNumber": 20,
+          "column": 24
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -145,7 +145,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1613375388044
+    "lastSave": 1613375590036
   },
   "VCS_STATE": {
     "provider": "GitHub",
